@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Roboto';
+    background-color: #E0E1DD;
+    height: 100vh;
+    color: #0D1B2A;
+}
+
+h1, h2, h3, p {
+    color: #0D1B2A;
+}
+
+#bg h1 {
+    position:relative;
+    color: #E0E1DD;
+    font-size: 6vw;
+    font-weight: bold;
+    /*text-transform: uppercase;*/
+    /*text-shadow: 0 0 10px rgba(255, 255, 255, .35);*/
+    margin: 10px 10px 5px 10px;
+}
+
+#bg h2 {
+    position: relative;
+    color: #E0E1DD;
+    font-size: 3vw;
+    font-weight: light;
+    margin: 0px 5px 5px 5px;
+}
+#bg h3 {
+    position: absolute;
+    bottom: 0;
+    color: rgba(224, 224, 221, 0.8);
+    font-size: 2vw;
+    font-weight: lighter;
+}
+#bg {
+    margin: 0;
+    display: flex;
+    background-color: #0D1B2A;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#titleContainer {
+    position: relative;
+    max-height: 100vh;
+    max-width: 100vw;
+    padding: 0 0 0 0;
+}
+
+#titleTextContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.sectionTitle {
+    margin: 45px 10px 25px 10px;
+}
+
+#projectDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    height: fit-content;
+    align-items: center;
+}
+
+.projectContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: fit-content;
+    min-height: 20px;
+    width: 80%;
+    max-width: 95%;
+    border-radius: 20px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: -5px 5px 5px rgba(13, 27, 42, 0.3);
+    transition: 0.25s;
+}
+
+.projectContainer:hover {
+    /*border: #0D1B2A 2px solid;*/
+    border: none;
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: -20px 20px 10px rgba(13, 27, 42, 0.5);
+}
+
+.projectTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    align-items: start;
+    justify-content: start;
+}
+.projectHeading {
+    margin-bottom: 25px;
+    
+}
+
+.projectImage {
+    width: 100%;
+    height: auto;
+}
+
+.projectImageContainer {
+    width: 50%;
+}
+
+.imageCaption {
+    font-family: 'Roboto';
+    color: #E0E1DD;
+    font-size: 1.5vw;
+    margin: 0;
+}
+@media (max-width: 800px) {
+    .projectContainer {
+      flex-direction: column;
+    }
+    .projectTextContainer {
+        width: 100%;
+    }
+    .projectImageContainer {
+        width: 100%;
+    }
+}
+
+#skillDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
+}
+.skillCard {
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    height: fit-content;
+    align-items: center;
+    justify-content: space-between;
+    margin: 35px 25px 35px 25px;
+    padding: 15px;
+    transition: 0.5s;
+}
+.skillCard img {
+    width: 100%;
+    height: auto;
+}
+.skillCard:hover {
+    background-color: white;
+    border-radius: 5px;
+    transform: scale(1.1);
+    box-shadow: -10px 10px 5px rgba(13, 27, 42, 0.5);
+}
+.skillCaption {
+    margin-top: 25px;
+}
+@media (max-width: 800px) {
+    #skillDisplay {
+      padding: 15px;
+    }
+    .skillCard {
+        width: fit-content;
+    }
+    .skillCard img {
+        max-width: 50px;
+    }
+}
+
+#eduDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    height: fit-content;
+    align-items: center;
+}
+.eduContainer {
+    display: flex;
+    flex-direction: row;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: fit-content;
+    min-height: 20px;
+    width: 80%;
+    max-width: 95%;
+    border-radius: 20px;
+    padding: 25px;
+    align-items: center;
+    justify-content: space-between;
+    /*box-shadow: -15px 15px 5px rgba(13, 27, 42, 0.6);*/
+    background-color: white;
+    box-shadow: -5px 5px 5px rgba(13, 27, 42, 0.3);
+    transition: 0.25s;
+}
+.eduContainer:hover {
+    /*border: #0D1B2A 2px solid;*/
+    border: none;
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: -20px 20px 10px rgba(13, 27, 42, 0.5);
+}
+.eduTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    margin: 10px;
+    align-items: start;
+    justify-content: start;
+}
+.eduImageContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.eduImg {
+    width: 100%;
+    max-width: 20vw;
+    height: auto;
+}
+@media (max-width: 800px) {
+    .eduContainer {
+      flex-direction: column;
+    }
+    .eduTextContainer {
+        width: 100%;
+        height: auto;
+    }
+    .eduImageContainer {
+        width: 100%;
+        height: auto;
+    }
+}
+
+#intDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    height: fit-content;
+    align-items: center;
+}
+
+#contactCardDisplay {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 25px 0 25px 0;
+    height: fit-content;
+    align-items: center;
+}
+
+.contactCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    height: fit-content;
+    min-height: 20px;
+    width: 80%;
+    max-width: 95%;
+    /*border: #0D1B2A 1px solid;*/
+    background-color: white;
+    border-radius: 20px;
+    padding: 25px;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -5px 5px 5px rgba(13, 27, 42, 0.3);
+    transition: 0.25s;
+    /* 
+    background-color: white;
+    box-shadow: -5px 5px 5px rgba(13, 27, 42, 0.3);
+    transition: 0.25s;
+    */
+}
+.contactCard:hover {
+    /*border: #0D1B2A 2px solid;*/
+    border: none;
+    background-color: white;
+    transform: scale(1.1);
+    box-shadow: -20px 20px 10px rgba(13, 27, 42, 0.5);
+}
+
+.titleButtonContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+@media (max-width: 700px) {
+    .titleButtonContainer {
+        flex-direction: column;
+    }
+}
+ 
+.button-28 {
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #E0E1DD;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #E0E1DD;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 10px;
+  width: fit-content;
+  height: fit-content;
+  outline: none;
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  will-change: transform;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-items:right;
+  gap: 10px;
+}
+.button-28:disabled {
+  pointer-events: none;
+}
+.button-28:hover {
+  color: #0D1B2A;
+  background-color: #E0E1DD;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+.button-28:active {
+  box-shadow: none;
+  transform: translateY(0);
+}
